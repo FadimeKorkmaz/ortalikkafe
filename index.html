@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ortalık Cafe Menü</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <img src="photo/logo.png" alt="Ortalık Cafe Logo" class="site-logo">
+  <div class="header-content">
+    <h1>Ortalık Cafe</h1>
+    <p>Food • Coffee • Cocktail</p>
+  </div>
+</header>
+
+<nav class="menu-links">
+  <div class="menu-links-inner">
+    <button onclick="showCategory('aperatif')">APERATİFLER</button>
+    <button onclick="showCategory('makarna')">MAKARNALAR</button>
+    <button onclick="showCategory('tavuk')">TAVUKLAR</button>
+    <button onclick="showCategory('burger')">BURGERLER</button>
+    <button onclick="showCategory('pizza')">PİZZALAR</button>
+    <button onclick="showCategory('et')">ETLER</button>
+    <button onclick="showCategory('salata')">SALATALAR</button>
+    <button onclick="showCategory('bira')">BİRALAR</button>
+    <button onclick="showCategory('vodka')">VODKA</button>
+    <button onclick="showCategory('cin')">CİN</button>
+    <button onclick="showCategory('viski')">VİSKİLER</button>
+    <button onclick="showCategory('tekila')">TEKİLA</button>
+    <button onclick="showCategory('likor')">LİKÖRLER</button>
+    <button onclick="showCategory('vermut')">VERMUTLAR</button>
+    <button onclick="showCategory('rom')">ROM</button>
+    <button onclick="showCategory('cognac')">COGNAC</button>
+    <button onclick="showCategory('sarap')">ŞARAPLAR</button>
+    <button onclick="showCategory('kokteyl')">KOKTEYLLER</button>
+    <button onclick="showCategory('raki')">RAKILAR</button>
+    <button onclick="showCategory('sicak-icecek')">SICAK İÇECEKLER</button>
+    <button onclick="showCategory('mesrubat')">MEŞRUBATLAR</button>
+    <button onclick="showCategory('meze')">MEZELER</button>
+    <button onclick="showCategory('cerez')">ÇEREZLER</button>
+  </div>
+</nav>
+
+<main id="menu" class="menu"></main>
+
+<script src="menu-data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
