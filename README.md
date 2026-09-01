@@ -1,66 +1,39 @@
-**Ortalık Cafe — QR Menü**
+# Ortalık Cafe QR Menü
 
-Ortalık Cafe için geliştirilen, müşterilerin QR kod üzerinden hızlı ve kolay bir şekilde menüye ulaşmasını sağlayan web tabanlı dijital menü uygulamasıdır.
+Ortalık Cafe için geliştirilen web tabanlı dijital menü uygulaması.
 
- **Proje Hakkında**
+Proje, müşterilerin QR kod üzerinden menüye hızlı bir şekilde erişebilmesini ve ürünleri kategoriler halinde görüntüleyebilmesini sağlamak amacıyla geliştirilmiştir. Uygulama mobil cihazlarda kullanılmak üzere responsive olarak tasarlanmıştır.
 
-Bu proje, fiziksel menü kullanımını azaltmak ve müşterilerin menüye telefonlarından kolayca erişebilmesini sağlamak amacıyla geliştirilmiştir.
+## Özellikler
 
-Müşteriler, masalarda bulunan QR kodu telefonlarının kamerasıyla okutarak herhangi bir uygulama yüklemeden dijital menüye ulaşabilir.
+* QR kod üzerinden menüye erişim
+* Responsive ve mobil uyumlu arayüz
+* Kategori bazlı ürün listeleme
+* Dinamik ürün ve fiyat gösterimi
+* Ürün açıklamalarının görüntülenmesi
+* Sade ve kullanıcı odaklı arayüz
+* Herhangi bir uygulama kurulumu gerektirmeyen web tabanlı yapı
 
-Menü içerisindeki ürünler kategorilere ayrılmıştır ve kullanıcılar istedikleri kategoriye tek tıklamayla ulaşabilir.
+## Kullanılan Teknolojiler
 
-**Özellikler**
+* HTML5
+* CSS3
+* JavaScript
+* Git
+* GitHub
 
-*  Mobil uyumlu (Responsive) tasarım
-*  QR kod ile menüye hızlı erişim
-*  Kategorilere göre menü filtreleme
-*  Ürün ve fiyat bilgilerinin dinamik olarak gösterilmesi
-*  Ürün açıklamalarının gösterilmesi
-*  Hızlı ve sade kullanıcı arayüzü
-*  Web tabanlı yapı
-*  Uygulama yükleme gerektirmez
+## Teknik Yapı
 
-**Menü Kategorileri**
+Menü ürünleri `menu-data.js` dosyasında JavaScript veri yapısı içerisinde tutulmaktadır.
 
-Proje içerisinde farklı yiyecek ve içecek kategorileri bulunmaktadır:
+`script.js` içerisinde bulunan `showCategory()` fonksiyonu, kullanıcının seçtiği kategoriye göre ürünleri filtreleyerek dinamik olarak sayfaya eklemektedir.
 
-* Aperatifler
-* Makarnalar
-* Tavuklar
-* Burgerler
-* Pizzalar
-* Etler
-* Salatalar
-* Biralar
-* Vodka
-* Cin
-* Viskiler
-* Tekila
-* Likörler
-* Vermutlar
-* Rom
-* Cognac
-* Şaraplar
-* Kokteyller
-* Rakılar
-* Sıcak İçecekler
-* Meşrubatlar
-* Mezeler
-* Çerezler
+Bu yapı sayesinde menü içeriğinin tek bir veri kaynağından yönetilmesi ve yeni ürün veya kategorilerin kolayca eklenebilmesi sağlanmıştır.
 
-## 🛠️ Kullanılan Teknolojiler
+## Proje Yapısı
 
-* **HTML5** — Sayfa yapısı ve içerik
-* **CSS3** — Tasarım ve responsive yapı
-* **JavaScript** — Menü verilerinin yönetimi ve kategori filtreleme
-* **Git & GitHub** — Versiyon kontrolü ve proje yönetimi
-
-**Proje Yapısı**
-
-```text
+```text id="5qj5i1"
 ortalikkafe/
-│
 ├── index.html
 ├── menu.html
 ├── menu-data.js
@@ -69,48 +42,19 @@ ortalikkafe/
 ├── logo.png
 ├── arkaplan.png
 └── Ekran görüntüsü 2026-03-02 193922.png
-...
-
- **Çalışma Mantığı**
-
-Menü ürünleri `menu-data.js` içerisinde JavaScript nesneleri olarak tutulmaktadır.
-
-Kullanıcı bir kategori seçtiğinde `script.js` içerisindeki `showCategory()` fonksiyonu ilgili kategoriye ait ürünleri filtreleyerek ekrana getirir.
-
-...javascript
-function showCategory(category) {
-  menuContainer.innerHTML = "";
-  const filteredItems = menuData.filter(item => item.category === category);
-
-  filteredItems.forEach(item => {
-    // Menü ürününü oluştur ve ekrana ekle
-  });
-}
 ```
 
-Bu yapı sayesinde menü içerikleri HTML içerisinde tekrar tekrar yazılmak yerine merkezi bir veri yapısından yönetilmektedir.
+## Kullanım
 
-**Kullanım**
+Kullanıcı, masada bulunan QR kodu telefonunun kamerasıyla okutarak dijital menüye ulaşabilir. Menü içerisinden ilgili kategori seçilerek ürünlerin fiyat ve açıklamaları görüntülenebilir.
 
-1. Kullanıcı QR kodu telefonuyla tarar.
-2. Dijital menü web sayfası açılır.
-3. Kullanıcı istediği kategoriye girer.
-4. Ürünlerin açıklamalarını ve fiyatlarını görüntüler.
-
-**Projenin Amacı**
-
-Projenin temel amacı, restoran ve kafelerde kullanılabilecek **basit, hızlı ve mobil uyumlu bir dijital menü çözümü** oluşturmaktır.
-
-Aynı yapı farklı işletmeler için de özelleştirilebilir ve yeni kategoriler, ürünler ve tasarım bileşenleri eklenerek geliştirilebilir.
-
-Geliştirici
+## Geliştirici
 
 **Fadime Korkmaz**
 
 Software Engineering Student
 
-GitHub: [FadimeKorkmaz](https://github.com/FadimeKorkmaz)
+[GitHub](https://github.com/FadimeKorkmaz)
 
----
 
-!!!Bu proje gerçek bir işletmenin dijital menü ihtiyacı doğrultusunda geliştirilmiştir.
+!!!!!Bu proje gerçek bir işletme için geliştirilmiştir.
