@@ -4,6 +4,11 @@ Ortalık Cafe için geliştirilen web tabanlı dijital menü uygulaması.
 
 Proje, müşterilerin QR kod üzerinden menüye hızlı bir şekilde erişebilmesini ve ürünleri kategoriler halinde görüntüleyebilmesini sağlamak amacıyla geliştirilmiştir. Uygulama mobil cihazlarda kullanılmak üzere responsive olarak tasarlanmıştır.
 
+##Live Demo
+
+[Ortalık Cafe Dijital Menü](https://main.d6b39b0vhlim5.amplifyapp.com/)
+
+
 ## Özellikler
 
 * QR kod üzerinden menüye erişim
