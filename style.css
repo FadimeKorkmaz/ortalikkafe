@@ -21,7 +21,7 @@ body {
   /* ARKA PLAN FOTOĞRAFI */
   background-image: 
     linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.85)),
-    url('photo/arkaplan.png'); /* Dosya yolunu kontrol edin */
+    url('arkaplan.png'); /* Dosya yolunu kontrol edin */
 
   background-repeat: no-repeat;
   background-position: center center;
